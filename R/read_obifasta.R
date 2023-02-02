@@ -129,10 +129,10 @@ extract_readcount <- function(sequences, key = "merged_sample") {
   data$motu <- factor(data$motu,levels = sequences$id)
   samples <- unique(data$sample)
   data$sample <- factor(data$sample,levels = samples)
-  sparseMatrix(i = as.integer(data$motu),
-              j = as.integer(data$sample),
+  sparseMatrix(i = as.integer(data$sample),
+              j = as.integer(data$motu),
               x = data$count,
-              dims = c(nrow(sequences),length(samples)),
-              dimnames= list(sequences$id,samples))
+              dims = c(length(samples),nrow(sequences)),
+              dimnames= list(samples,sequences$id))
 
 }
