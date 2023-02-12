@@ -29,4 +29,5 @@ Suggests:
 RoxygenNote: 7.2.2
 Collate: 
     'read_obifasta.R'
+    'read_obifastq.R'
     'robimessage.R'
