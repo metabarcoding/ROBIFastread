@@ -2,6 +2,9 @@
 
 A preliminary R package allowing to read files produced by OBITools4
 
+> ⚠️ **Warning:** We highly recommand to use the new `obicsv` and `obimatrix` commands to produce CSV files from your fast(a|q) files
+> instead of using this package.
+
 ## Installation
 
 You first need to install the `devtools` package.
